@@ -4,3 +4,5 @@
 vim.keymap.set("i", "<S-CR>", function()
   return vim.fn.col(".") <= 1 and "<CR>" or "<CR><C-U>"
 end, { expr = true })
+vim.opt.textwidth = 80
+vim.opt.wrap = true
